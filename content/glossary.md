@@ -4,26 +4,33 @@ metaTitle: "Glossary of terminology"
 metaDescription: "This is a glossary of the terminology used in the Haptic protocol."
 ---
 
-### Haptic network token (HAP)
+### Automated market maker (AMM)
 
-It is the token used a collateral by stakers in the Haptic protocol. It is designed with a weekly inflationary policy and progressive decay.
+A decentralized protocol designed to eliminate the need for counterparties and automate token trades.
+
+### Collateralisation ratio (C-ratio)
+It represents the value of the collateral against the loaned funds.
 
 ### Decentralized autonomous organization (DAO)
 
 A system to automate decision making, submission of proposals and voting. Rules are encoded in smart contracts designed to be independant from a central organization.
 
-### Automated market maker (AMM)
-A decentralized protocol designed to eliminate the need for counterparties and automate token trades.
+### Haptic network token (HAP)
 
-### Liquidity provider (LP)
-A person or entity that engages in liquidity provisioning on AMMs such as Uniswap, Balancer, etc.
-
-### LP token 
-A token representing a share in the liquidity of an AMM pool
+It is the token used a collateral by stakers in the Haptic protocol. It is designed with a weekly inflationary policy and progressive decay.
 
 ### Impermanent loss (I/L)
 
 Refers to the loss experienced by liquidity providers on AMMs due to the effect of arbitrage trades and market volatility, also known as divergence loss.
+
+### Liquidity provider (LP)
+A person or entity that engages in liquidity provisioning on AMMs such as Uniswap, Balancer, etc.
+
+### LP Bonding
+Bonding is when a staker purchases HAP tokens from the protocol, at a discount from the market price. The staker provides a LP token to the protocol treasury in return for the HAP token. Discount is determined by the market and depends on the balance between demand and supply of the tokenized debt asset.  
+
+### LP token 
+A token representing a share in the liquidity of an AMM pool
 
 ### Protocol owned liquidity (POL)
 Refers to the ability of the protocol to control its own liquidity on AMMs, as a result of the LP Bonding process.
@@ -31,9 +38,6 @@ Refers to the ability of the protocol to control its own liquidity on AMMs, as a
 ### Tokenized debt asset (TDA)
 Staking in the Haptic protocol creates debt denominated in tokenized debt asset. The value of TDA is pegged 1:1 with the US Dollar.
 
-### Collateralisation ratio (C-ratio)
-It represents the value of the collateral against the loaned funds.
 
-### LP Bonding
-Bonding is when a staker purchases HAP tokens from the protocol, at a discount from the market price. The staker provides a LP token to the protocol treasury in return for the HAP token. Discount is determined by the market and depends on the balance between demand and supply of the tokenized debt asset.  
+
 
