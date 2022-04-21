@@ -5,7 +5,7 @@ metaDescription: "Increase capital efficiency and reduce the impact of impermane
 ---
 
 ### What are the benefits?
-Haptic finance aims to be a comprehensive on-ramp for the average DeFi user who seeks to engage in liquidity provisioning and yield farming activities. Our ethos is to empower users and their decision making by providing them with context and awareness. As such, Haptic offers real-time tracking of impermanent loss coupled with detailed LP stats and our user interface is designed to guide and reward users for optimal behavior.
+Haptic finance aims to be a comprehensive on-ramp for the average DeFi user who seeks to engage in liquidity provisioning and yield farming activities. Our ethos is to empower users and enhance their decision making by providing them with context and awareness. As such, Haptic offers real-time tracking of impermanent loss coupled with detailed LP stats and our user interface is designed to guide and reward users for optimal behavior.
 
 ### How does it work?
 
