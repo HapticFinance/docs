@@ -4,7 +4,7 @@ metaTitle: "Syntax Highlighting is the meta title tag for this page"
 metaDescription: "This is the meta description for this page"
 ---
 
-### What is impermanent loss?
+## What is impermanent loss?
 Impermanent loss, or divergence loss, is a phenomena experienced by liquidity providers on AMMs like Uniswap. As a result of market volatility and arbitrage trades, the liquidity position may fall in value with respect to either asset comprising the position. This means that upon withdrawing liquidity, the user will end up with less tokens that he deposited initially, at least for one of the two assets comprising the position. Impermanent loss is often defined as the percentage loss for a given price movement. It is important to note that impermanent loss will happen regardless of the price direction.
 
 Impermanent loss for a given change in price ratio ![k](https://render.githubusercontent.com/render/math?math=%7Bk%7D), in respect to one asset is defined as:
