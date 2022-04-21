@@ -15,7 +15,7 @@ Haptic is a dual token system, comprised of Haptic network token (HAP) and Token
 
 ### Why use Haptic?
 
-As explained above, there are two types of Haptic users, Borrowers and Stakers. The former use the platform to engage in liquidity provisioning and yield farming, without having to sell their principal (ETH at the moment) and with added impermanent loss protection. The latter engage the protocol by staking HAP tokens and contributing to the debt pool depth, with the goal of earning from staking rewards and extra yields. 
+As explained above, there are two types of Haptic users, Borrowers and Stakers. The former use the platform to engage in liquidity provisioning and yield farming on selected pools, without having to sell their principal (ETH at the moment) and with added impermanent loss protection. The latter engage the protocol by staking HAP tokens and contributing to the debt pool depth, with the goal of earning from staking rewards and extra yields. 
 
 ### How does Haptic operate?
 
