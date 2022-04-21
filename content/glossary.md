@@ -3,6 +3,8 @@ title: "Glossary"
 metaTitle: "Glossary of terminology"
 metaDescription: "This is a glossary of the terminology used in the Haptic protocol."
 ---
+### Decentralized autonomous organization (DAO)
+A system to automate decision making, submission of proposals and voting. Rules are encoded in smart contracts designed to not depend on a central organization.
 
 ### Automated market maker (AMM)
 A decentralized protocol designed to eliminate the need for counterparties and automate token trades.
@@ -21,7 +23,7 @@ Refers to the loss experienced by liquidity providers on AMMs due to the effect 
 Refers to the ability of the protocol to control its own liquidity on AMMs, as a result of the LP Bonding process.
 
 ### Tokenized debt asset (TDA)
-Staking in the Haptic protocol creates debt, which is represented by the tokenized debt asset, which is pegged 1:1 with the US Dollar.
+Staking in the Haptic protocol creates debt denominated in tokenized debt asset. The value of TDA is pegged 1:1 with the US Dollar.
 
 ### Collateralisation ratio (c-ratio)
 It represents the value of the collateral against the loaned funds.
