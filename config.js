@@ -3,7 +3,7 @@ const config = {
     pathPrefix: '/',
     siteUrl: 'https://docs.haptic.finance/',
     gaTrackingId: null,
-    trailingSlash: false,
+    trailingSlash: true,
   },
   header: {
     logo: 'https://raw.githubusercontent.com/HapticFinance/assets/29e2f5a27dd86bc1b08fc933d7fae149b790827f/logo-horizontal.svg',
@@ -35,14 +35,17 @@ const config = {
       algoliaSearchKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
       algoliaAdminKey: process.env.ALGOLIA_ADMIN_KEY,
     },
+    forcedNavOrder:{
+      enabled: true,
+    }
   },
   sidebar: {
     forcedNavOrder: [
       '/basics', // add trailing slash if enabled above
-      '/codeblock',
+      '/borrowers',
     ],
     collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
+      '/basics', // add trailing slash if enabled above
     ],
     links: [{ text: 'Haptic Finance', link: 'https://haptic.finance/' }],
     frontline: false,
