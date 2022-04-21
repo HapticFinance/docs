@@ -6,11 +6,11 @@ metaDescription: "This is a glossary of the terminology used in the Haptic proto
 
 ### Haptic network token (HAP)
 
-It is the token used a collateral by stakers in the Haptic protocol. It is designed with a weekly inflationary policy with progressive decay.
+It is the token used a collateral by stakers in the Haptic protocol. It is designed with a weekly inflationary policy and progressive decay.
 
 ### Decentralized autonomous organization (DAO)
 
-A system to automate decision making, submission of proposals and voting. Rules are encoded in smart contracts designed to not depend on a central organization.
+A system to automate decision making, submission of proposals and voting. Rules are encoded in smart contracts designed to be independant from a central organization.
 
 ### Automated market maker (AMM)
 A decentralized protocol designed to eliminate the need for counterparties and automate token trades.
