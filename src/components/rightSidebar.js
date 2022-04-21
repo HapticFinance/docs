@@ -46,9 +46,6 @@ const SidebarLayout = ({ location }) => (
                     <ListItem key={index} to={`#${itemId}`} level={1}>
                       {innerItem.title}
                     </ListItem>
-                    <ListItem key={"gloss"} to={"/glossary"}>
-                      Glossary
-                    </ListItem>
                     </>
                   );
                 });
@@ -63,12 +60,17 @@ const SidebarLayout = ({ location }) => (
 
       if (finalNavItems && finalNavItems.length) {
         return (
+          <>
+          <ListItem key={"gloss"} to={"/glossary"}>
+            Glossary
+          </ListItem>
           <Sidebar>
             <ul className={'rightSideBarUL'}>
               <li className={'rightSideTitle'}>CONTENTS</li>
               {finalNavItems}
             </ul>
           </Sidebar>
+          </>
         );
       } else {
         return (
