@@ -122,6 +122,13 @@ const Tree = ({ edges }) => {
 
   const defaultCollapsed = {};
 
+  // sort items alphabetically.
+  treeData.items = treeData.items.sort(function(a, b) {
+    if (a.label < b.label) return -1;
+    if (a.label > b.label) return 1;
+    return 0;
+  });
+
   treeData.items.forEach(item => {
     if (config.sidebar.collapsedNav && config.sidebar.collapsedNav.includes(item.url)) {
       defaultCollapsed[item.url] = true;

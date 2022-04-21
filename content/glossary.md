@@ -25,7 +25,7 @@ Refers to the ability of the protocol to control its own liquidity on AMMs, as a
 ### Tokenized debt asset (TDA)
 Staking in the Haptic protocol creates debt denominated in tokenized debt asset. The value of TDA is pegged 1:1 with the US Dollar.
 
-### Collateralisation ratio (c-ratio)
+### Collateralisation ratio (C-ratio)
 It represents the value of the collateral against the loaned funds.
 
 ### LP Bonding

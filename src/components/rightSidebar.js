@@ -27,6 +27,7 @@ const SidebarLayout = ({ location }) => (
       let finalNavItems;
 
       if (allMdx.edges !== undefined && allMdx.edges.length > 0) {
+
         const navItems = allMdx.edges.map((item, index) => {
           let innerItems;
 
@@ -42,11 +43,9 @@ const SidebarLayout = ({ location }) => (
                     : '#';
 
                   return (
-                    <>
                     <ListItem key={index} to={`#${itemId}`} level={1}>
                       {innerItem.title}
                     </ListItem>
-                    </>
                   );
                 });
               }
@@ -56,21 +55,18 @@ const SidebarLayout = ({ location }) => (
             finalNavItems = innerItems;
           }
         });
+
+        console.log(finalNavItems)
       }
 
       if (finalNavItems && finalNavItems.length) {
         return (
-          <>
-          <ListItem key={"gloss"} to={"/glossary"}>
-            Glossary
-          </ListItem>
           <Sidebar>
             <ul className={'rightSideBarUL'}>
               <li className={'rightSideTitle'}>CONTENTS</li>
               {finalNavItems}
             </ul>
           </Sidebar>
-          </>
         );
       } else {
         return (

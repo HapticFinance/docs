@@ -119,14 +119,13 @@ const SidebarLayout = ({ location }) => (
             <Tree edges={allMdx.edges} />
             {config.sidebar.links && config.sidebar.links.length > 0 && <Divider />}
             {config.sidebar.links.map((link, key) => {
+              console.log(link)
               if (link.link !== '' && link.text !== '') {
                 return (
-                  <>
                   <ListItem key={key} to={link.link}>
                     {link.text}
                     <ExternalLink size={14} />
                   </ListItem>
-                  </>
                 );
               }
             })}
