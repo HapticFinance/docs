@@ -42,9 +42,14 @@ const SidebarLayout = ({ location }) => (
                     : '#';
 
                   return (
+                    <>
                     <ListItem key={index} to={`#${itemId}`} level={1}>
                       {innerItem.title}
                     </ListItem>
+                    <ListItem key={"gloss"} to={"/glossary"}>
+                      Glossary
+                    </ListItem>
+                    </>
                   );
                 });
               }
