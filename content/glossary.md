@@ -3,7 +3,13 @@ title: "Glossary"
 metaTitle: "Glossary of terminology"
 metaDescription: "This is a glossary of the terminology used in the Haptic protocol."
 ---
+
+### Haptic network token (HAP)
+
+It is the token used a collateral by stakers in the Haptic protocol. It is designed with a weekly inflationary policy with progressive decay.
+
 ### Decentralized autonomous organization (DAO)
+
 A system to automate decision making, submission of proposals and voting. Rules are encoded in smart contracts designed to not depend on a central organization.
 
 ### Automated market maker (AMM)
@@ -30,3 +36,4 @@ It represents the value of the collateral against the loaned funds.
 
 ### LP Bonding
 Bonding is when a staker purchases HAP tokens from the protocol, at a discount from the market price. The staker provides a LP token to the protocol treasury in return for the HAP token. Discount is determined by the market and depends on the balance between demand and supply of the tokenized debt asset.  
+
