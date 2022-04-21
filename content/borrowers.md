@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Borrowers"
 metaTitle: "Introduction to Haptic Finance"
 metaDescription: "Increase capital efficiency and reduce the impact of impermanent loss."
 ---
