@@ -17,7 +17,7 @@ A system to automate decision making, submission of proposals and voting. Rules 
 
 ### Haptic network token (HAP)
 
-It is the token used a collateral by stakers in the Haptic protocol. It is designed with a weekly inflationary policy and progressive decay.
+It is the token used a collateral by stakers in the Haptic protocol. It is designed with a weekly inflationary policy and a progressive decay.
 
 ### Impermanent loss (I/L)
 
@@ -26,7 +26,7 @@ Refers to the loss experienced by liquidity providers on AMMs due to the effect 
 ### Liquidity provider (LP)
 A person or entity that engages in liquidity provisioning on AMMs such as Uniswap, Balancer, etc.
 
-### LP Bonding
+### LP bonding
 Bonding is when a staker purchases HAP tokens from the protocol, at a discount from the market price. The staker provides a LP token to the protocol treasury in return for the HAP token. Discount is determined by the market and depends on the balance between demand and supply of the tokenized debt asset.  
 
 ### LP token 
