@@ -54,11 +54,11 @@ const config = {
     //   "Docs",
   },
   siteMetadata: {
-    title: 'Gatsby Gitbook Boilerplate | Hasura',
-    description: 'Documentation built with mdx. Powering hasura.io/learn ',
+    title: 'Haptic Documentation',
+    description: 'Haptic Finance Docs',
     ogImage: null,
     docsLocation: 'https://github.com/HapticFinance/docs/',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    favicon: 'https://raw.githubusercontent.com/HapticFinance/assets/main/favicon.ico',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
