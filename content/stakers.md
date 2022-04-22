@@ -20,7 +20,7 @@ Every week, a large part of the inflationary supply minted is distributed to sta
 Stakers take on the overall debt risk and enable impermanent loss compensation. They will be able to hedge against this risk 
 through the Haptic protocol, with a combination of options and futures at an added cost. Alternatively, they can deploy their own hedging strategy by taking positions external to the system.
 
-## Minting & burning TDA
+## Minting TDA
 
 An HAP holder can mint TDA by locking their HAP as collateral on the Haptic protocol. Under the hood, this is how it works:
 
@@ -30,11 +30,17 @@ An HAP holder can mint TDA by locking their HAP as collateral on the Haptic prot
 
 If HAP/USD rate increases, the system will automatically unlock a portion of the staker's HAP, which can be used to mint more TDA if the staker whishes so. On the other hand, if the rate decreases, the system will require more collateral and as a result, the staker c-ratio may fall below target. Under this circumstance, the staker has a choice of adding more collateral, either acquired on the market or via LP bonding, or pay their debt by burning TDA. 
 
+## Burning TDA
+
+When a staker wishes to exit the system or reduce their debt to unlock staked HAP, they must pay back their debt. If the debt pool fluctuates while they are staked, they might have to burn more or less TDA than they minted originally. 
+
 ## Debt shares
+[Glossary definition](/glossary/#debtshares)
 
 Debt in the system changes according to borrowers and stakers' actions and the effect of impermanent loss across the liquidity pools the protocol is engaged with. Debt shares keep track of the percentage of debt owned by a staker, represented as an ERC20 compatible token for maximum composability.
 
 ## LP bonding
+[Glossary definition](/glossary/#lpbonding)
 
 Stakers will be able to trade LP tokens for certain pairs in change for discount HAP tokens, which will be automatically locked in the system as collateral. This is useful as it allows the protocol to control and direct his own liquidity and serves as mechanism to keep the account in check for stakers.
 
