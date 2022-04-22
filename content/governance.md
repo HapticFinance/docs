@@ -4,23 +4,10 @@ metaTitle: "Syntax Highlighting is the meta title tag for this page"
 metaDescription: "This is the meta description for this page"
 ---
 
-The following is a code block with JavaScript language syntax highlighting.
+## How is Haptic governed?
 
-```javascript
-import React from 'react';
-```
+We use a governance model composed by a DAO, community members, early contributors and several councils elected by stakers in the protocol. Each council controls specific parts of the system, for example, the technical council manages the protocol updates multisig, while the treasury council funds incentives and manages treasury.
 
-Supports multiple languages.
+## Governance structure
 
-The following is a code block with diff. Lines with `+` highlighted in green shade indicating an addition. Lines with `-` highlighted in red shade indicating a deletion.
-
-```javascript
-- const data = ['1','2'];
-+ const data = [1,2];
-```
-
-## Live Editing example
-
-```javascript react-live=true
-<button className={'btn btn-default'}>Change my text</button>
-```
+## WIP
