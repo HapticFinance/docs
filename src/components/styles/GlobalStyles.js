@@ -154,17 +154,16 @@ export const baseStyles = css`
     border: none;
   }
   .formElement svg path {
-    fill: #2fd2c5;
+    fill: #ffffff;
   }
   .searchInput {
     width: 100%;
-    background-color: rgba(28,211,198,.12) !important;
+    background-color: #f5f5f5 !important;
     border-width: 0 !important;
-    color: #C2C2C2;
+    color: #5864ac;
     padding: 10px;
     border-radius: 5px;
-    color: #fff;
-    opacity: .6;
+    opacity: .8;
     padding-left: 38px;
     max-width: 600px;
   }
