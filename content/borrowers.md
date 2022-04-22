@@ -22,7 +22,7 @@ In the above example, if ETH/USD takes a sharp downturn and the underlying loan 
 
 ## Liquidation
 
-The loan liquidation ratio is a treshold for the loan c-ratio. Once reached, it signals that the loan is approaching a status-quo where the collateral value is not enough to cover the loan outstanding amount plus interest. This value depends on the loan provider c-ratio and may vary across providers. The Haptic protocol will alert borrowers of the risk of liquidation ahead of time, in order to avoid the likelihood of the event. The liquidation fee is a penalty imposed by some loan providers for incurring in a liquidation and may also vary depending on the provider.
+The loan liquidation ratio is a treshold for the loan c-ratio. Once reached, it signals that the loan is approaching a status-quo where the collateral value is not enough to cover the loan outstanding amount plus interest. This value depends on the loan provider c-ratio and may vary across providers. The Haptic user interface will alert borrowers of the risk of liquidation ahead of time, in order to avoid the likelihood of the event taking place. The liquidation fee is a penalty imposed by some loan providers for incurring in a liquidation and may also vary depending on the provider.
 
 ## Fees
 
