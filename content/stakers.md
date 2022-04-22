@@ -32,7 +32,12 @@ If HAP/USD rate increases, the system will automatically unlock a portion of the
 
 ## Burning TDA
 
-When a staker wishes to exit the system or reduce their debt to unlock staked HAP, they must pay back their debt. If the debt pool fluctuates while they are staked, they might have to burn more or less TDA than they minted originally. 
+When a staker wishes to exit the system or reduce their debt to unlock staked HAP, they must pay back their debt. If the debt pool fluctuates while they are staked, they might have to burn more or less TDA than they minted originally. The process can be summed as follows:
+
+* Haptic protocol checks the staker's debt balance and if they have enough TDA, their debt is removed from pool.
+* The amount of TDA required is burned and the total supply of TDA is updated to reflect it. 
+* HAP balance gets unlocked.
+
 
 ## Debt shares
 [Glossary definition](/glossary/#debtshares)

@@ -12,7 +12,7 @@ A decentralized protocol designed to eliminate the need for counterparties and a
 
 It represents the value of the collateral against the loaned funds.
 
-## Debt shares
+## Debt shares (HDS)
 
 An ERC20 compatible representation of the percentage of total debt in the system, owned by a HAP staker. 
 
@@ -28,6 +28,10 @@ It is the token used a collateral by stakers in the Haptic protocol. It is desig
 
 Refers to the loss experienced by liquidity providers on AMMs due to the effect of arbitrage trades and market volatility, also known as divergence loss.
 
+## Inflationary supply
+
+A mechanism designed to increase the HAP supply gradually over a period of time. Emissions will reduce according to a dynamic decay progression.
+
 ## Liquidity provider (LP)
 
 A person or entity that engages in liquidity provisioning on AMMs such as Uniswap, Balancer, etc.
@@ -40,7 +44,7 @@ Bonding is when a staker purchases HAP tokens from the protocol, at a discount f
 
 A token representing a share in the liquidity of an AMM pool
 
-#### Protocol owned liquidity (POL)
+## Protocol owned liquidity (POL)
 
 Refers to the ability of the protocol to control its own liquidity on AMMs, as a result of the LP Bonding process.
 
