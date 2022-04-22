@@ -16,3 +16,7 @@ While many projects do not rely on a inflationary monetary policy, they often qu
 | Year three  |18,750,000        |  231,250,000      | 9%
 | Year four   | 9,375,000        |  240,625,000      | 4%
 | Year five   | 4,687,000        |  245,312,500      | 2%
+
+
+## Inflation and Fees
+20% of inflation and protocol fees will be directed to the treasury. 80% of inflation and fees will go to stakers. These percentages can be adjusted at the Technical Council's discretion via a HIP.

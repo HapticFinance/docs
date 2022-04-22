@@ -24,6 +24,9 @@ A system to automate decision making, submission of proposals and voting. Rules 
 
 It is the token used a collateral by stakers in the Haptic protocol. It is designed with a weekly inflationary policy and a progressive decay.
 
+## Haptic improvement proposal (HIP)
+A Haptic improvement proposal or HIP, is a formal request to change some current protocol mechanism or add a new feature.
+
 ## Impermanent loss (I/L)
 
 Refers to the loss experienced by liquidity providers on AMMs due to the effect of arbitrage trades and market volatility, also known as divergence loss.
