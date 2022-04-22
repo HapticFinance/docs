@@ -12,7 +12,7 @@ A decentralized protocol designed to eliminate the need for counterparties and a
 
 It represents the value of the collateral against the loaned funds.
 
-## Debt shares (HDS)
+## Haptic Debt shares (HDS)
 
 An ERC20 compatible representation of the percentage of total debt in the system, owned by a HAP staker. 
 
