@@ -14,7 +14,7 @@ Borrowers engage with Haptic by depositing ETH and selecting one of the availabl
 
 ## I/L compensation
 
-Borrowers can decide at any time to exit their position and withdraw the ETH deposited. Upon such action, liquidity is withdrawn and the outstanding loan is paid back, including any interest. Under normal market conditions, the protocol will calculate any impermanent loss and disburse compensation denominated in TDA. Borrower can choose to automatically swap TDA for the loaned token and withdraw their principal plus profit. During heavy market volatility, the protocol will offer rewards in change for the user locking the liquidity position for a certain amount of time, e.g. 15 days. Rewards offered will range from HAP token to exclusive NFTs.
+Borrowers can decide at any time to exit their position and withdraw the ETH deposited. Upon such action, liquidity is withdrawn and the outstanding loan is paid back, including any interest. Under normal market conditions, the protocol will calculate impermanent loss and disburse compensation denominated in TDA. Borrower can choose to automatically swap TDA for the loaned token and withdraw their principal plus profit. During heavy market volatility, the protocol will offer rewards in change for the user locking the liquidity position for a certain amount of time, e.g. 15 days. Rewards offered will range from HAP token to exclusive NFTs.
 
 ## Loan health
 
@@ -22,7 +22,7 @@ In the above example, if ETH/USD takes a sharp downturn and the underlying loan 
 
 ## Liquidation
 
-The loan liquidation ratio is a treshold for the loan c-ratio. Once reached, it signals that the loan is approaching a status-quo where the collateral value is not enough to cover the loan outstanding amount plus interest. This value depends on the loan provider c-ratio and may vary across providers. The Haptic user interface will alert borrowers of the risk of liquidation ahead of time, in order to avoid the likelihood of this event taking place. The liquidation fee is a penalty imposed by some loan providers for incurring in a liquidation and may also vary depending on the provider.
+The loan liquidation ratio is a treshold for the loan c-ratio. Once reached, it signals that the loan is approaching a status where the collateral value is not enough to cover the loan outstanding amount plus interest. This value depends on the loan provider c-ratio and may vary across providers. The Haptic user interface will alert borrowers of the risk of liquidation ahead of time, in order to avoid the likelihood of this event taking place. The liquidation fee is a penalty imposed by some loan providers for incurring in a liquidation and may also vary depending on the provider.
 
 ## Fees
 
