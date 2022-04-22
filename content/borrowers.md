@@ -18,7 +18,7 @@ Borrowers can decide at any time to exit their position and withdraw the ETH dep
 
 ## Loan health
 
-In the above example, if ETH/USD takes a sharp downturn and the underlying loan c-ratio falls below liquidation ratio(\*), the position becomes at risk of being liquidated. Under such circumstance, the protocol may partially sell the ETH deposited in order to pay back the outstanding loan, plus a liquidation fee(\*). As a result of a partial liquidation, the account c-ratio is restored and the loan stops being eligible for I/L compensation of the related liquidity position. In this scenario, the user could avoid being impacted by either depositing more collateral or reducing his LP position before the liquidation happens. 
+In the above example, if ETH/USD takes a sharp downturn and the underlying loan c-ratio falls below liquidation ratio(\*), the position becomes at risk of being liquidated. Under such circumstance, the protocol may partially sell the ETH deposited in order to pay back the outstanding loan, plus a liquidation fee(\*). As a result of a partial liquidation, the account c-ratio is restored and the loan stops being eligible for I/L compensation of the related liquidity position. In this scenario, the user could avoid being impacted by either depositing more collateral or reducing his LP position ahead of the liquidation. 
 
 ## Liquidation
 
