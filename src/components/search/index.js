@@ -16,8 +16,10 @@ import { PoweredBy } from './styles';
 import { Search } from '@styled-icons/fa-solid/Search';
 import Input from './input';
 import * as hitComps from './hitComps';
+import lunr from 'lunr';
+import {documents} from "./documents.js"
 
-const SearchIcon = styled(Search)`
+ const SearchIcon = styled(Search)`
   width: 1em;
   pointer-events: none;
 `;
@@ -114,11 +116,6 @@ const useClickOutside = (ref, handler, events) => {
   });
 };
 
-const searchClient = algoliasearch(
-  config.header.search.algoliaAppId,
-  config.header.search.algoliaSearchKey
-);
-
 export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
   const ref = createRef();
 
@@ -128,30 +125,62 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
 
   useClickOutside(ref, () => setFocus(false));
   const displayResult = query.length > 0 && focus ? 'showResults' : 'hideResults';
+
+  const idx = lunr(function () {
+    this.ref('name')
+    this.field('text')
+  
+    documents.forEach(function (doc) {
+      this.add(doc)
+    }, this)
+  })
+
+  const onChange = e => {
+
+    setQuery(e.target.value);
+  }
+  let results = []
+
+  //console.log(`Query is ${query}`)
+  if (query != '') {
+    results = idx.search(query)
+  }
+
+  //console.log(results)
+
+  const links = {
+    "Borrowers": "/borrowers",
+    "Stakers": "/stakers",
+    "Basics": "/basics",
+  }
+  const hasResults = results.length > 0;
   return (
-    <InstantSearch
-      searchClient={searchClient}
-      indexName={indices[0].name}
-      onSearchStateChange={({ query }) => setQuery(query)}
-      root={{ Root, props: { ref } }}
-    >
-      <Input onFocus={() => setFocus(true)} {...{ collapse, focus }} />
-      <HitsWrapper
-        className={'hitWrapper ' + displayResult}
-        show={query.length > 0 && focus}
-        asGrid={hitsAsGrid}
-      >
-        {indices.map(({ name, title, hitComp, type }) => {
+    <>
+
+      <input 
+        style={results.length >= 3 ? 
+        {marginTop:"30px"}:{marginTop:"20px"} } 
+        type="text" 
+        placeholder="Search" 
+        onFocus={() => setFocus(true)} 
+        onChange={e => setQuery(e.target.value)}
+      />
+
+      <>
+        {hasResults > 0 ? 
+        results.map(result => {
+          //console.log(links[result.ref])
           return (
-            <Index key={name} indexName={name}>
-              <Results />
-              <Hits hitComponent={hitComps[hitComp](() => setFocus(false))} />
-            </Index>
-          );
-        })}
-        <PoweredBy />
-      </HitsWrapper>
-      <Configure hitsPerPage={5} />
-    </InstantSearch>
+            <ul style={{background:"beige", width:"25%"}}>
+              <a href={links[result.ref]}>
+                <li style={{minHeight:"25px"}} >{result.ref}</li>
+              </a>
+            </ul>
+          )
+        })  : 
+        <></>
+        }
+        </>
+    </>
   );
 }

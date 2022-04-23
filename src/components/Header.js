@@ -10,7 +10,7 @@ import LoadingProvider from './mdxComponents/loading';
 
 const help = require('./images/help.svg');
 
-const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
+const isSearchEnabled = true; //config.header.search && config.header.search.enabled ? true : false;
 
 let searchIndices = [];
 
@@ -21,7 +21,7 @@ if (isSearchEnabled && config.header.search.indexName) {
     hitComp: `PageHit`,
   });
 }
-
+console.log(searchIndices)
 import Sidebar from './sidebar';
 
 const LoadableComponent = Loadable({
