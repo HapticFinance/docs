@@ -154,7 +154,7 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
     <>
       <input 
         style={hasMany ? 
-        {marginTop:"180px", height:"35px", fontSize:"16px", width:"25%"} :
+        {marginTop:"200px", height:"35px", fontSize:"16px", width:"25%"} :
         {marginTop:"20px", height:"35px",fontSize:"16px", width:"25%"} } 
         type="text" 
         placeholder="Search" 
