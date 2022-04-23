@@ -19,7 +19,7 @@ As explained above, there are two types of Haptic users, Borrowers and Stakers. 
 
 ## How does Haptic operate?
 
-The protocol uses a decentralized governance structure, deeply inspired by other successful DeFi organizations. Precisely, we make use of a multi layer DAO, with various councils for different governance related tasks:
+The protocol uses a decentralized governance structure, deeply inspired by other successful DeFi organizations. Precisely, we make use of a DAO, with various councils for different governance related tasks:
 - Technical council, which controls the multisig for protocol upgrades. 
 - Treasury council, which controls the Treasury multisig.
 - Supervisor council, which oversees the DAO general operations.
