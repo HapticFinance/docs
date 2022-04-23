@@ -49,6 +49,8 @@ Stakers will be able to trade LP tokens for certain pairs in change for discount
 
 ## Liquidation
 
+In case of HAP price contractions, the amount of debt accumulated might cause the account c-ratio to fall below the liquidation target, currently set at 200%. Under such circumstance, the staker might be flagged for liquidation and their collateral will be partially liquidated in order to restore the account optimal c-ratio target (400%).
+
 ## Links
 
 [Website](https://haptic.finance) / [Medium](https://hapticfinance.medium.com/) / [Twitter](https://twitter.com/hapticfinance/) / [Discord](https://twitter.com/hapticfinance/) / [Github](https://github.com/hapticfinance/)

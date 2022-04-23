@@ -27,6 +27,9 @@ It is the token used a collateral by stakers in the Haptic protocol. It is desig
 ## Haptic improvement proposal (HIP)
 A Haptic improvement proposal or HIP, is a formal request to change some current protocol mechanism or add a new feature.
 
+## Liquidation
+An event which occurs as a result of price contractions and involves an amount of debt backed by some collateral. When the collateral value falls below a certain treshold, the collateral is liquidated to ensure debt repayment.
+
 ## Impermanent loss (I/L)
 
 Refers to the loss experienced by liquidity providers on AMMs due to the effect of arbitrage trades and market volatility, also known as divergence loss.
