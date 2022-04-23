@@ -133,10 +133,7 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
     }, this)
   })
 
-  const onChange = e => {
-
-    setQuery(e.target.value);
-  }
+ 
   let results = []
 
   if (query != '') {
