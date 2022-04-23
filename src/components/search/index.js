@@ -144,6 +144,7 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
     "Borrowers": "/borrowers",
     "Stakers": "/stakers",
     "Basics": "/basics",
+    "Impermanent loss": "/il",
   }
 
   const hasResults = results.length > 0;
