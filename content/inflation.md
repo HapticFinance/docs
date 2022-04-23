@@ -19,4 +19,4 @@ While many projects do not rely on a inflationary monetary policy, they often qu
 
 
 ## Inflation and Fees
-20% of inflation and protocol fees will be directed to the treasury. 80% of inflation and fees will go to stakers. These percentages can be adjusted at the Technical Council's discretion via a HIP.
+20% of inflation and protocol fees will be directed to the Treasury. 80% of inflation and fees will go to stakers. These percentages can be adjusted at the Technical Council's discretion via a HIP.

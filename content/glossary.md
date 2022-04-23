@@ -41,7 +41,7 @@ A person or entity that engages in liquidity provisioning on AMMs such as Uniswa
 
 ## LP bonding
 
-Bonding is when a staker purchases HAP tokens from the protocol, at a discount from the market price. The staker provides a LP token to the protocol treasury in return for the HAP token. Discount is determined by the market and depends on the balance between demand and supply of the tokenized debt asset.  
+Bonding is when a staker purchases HAP tokens from the protocol, at a discount from the market price. The staker provides a LP token to the protocol Treasury in return for the HAP token. Discount is determined by the market and depends on the balance between demand and supply of the tokenized debt asset.  
 
 ## LP token
 

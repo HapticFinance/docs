@@ -6,7 +6,7 @@ metaDescription: "This is the meta description for this page"
 
 ## How is Haptic governed?
 
-We use a governance model composed by a DAO, community members, early contributors and several councils elected by stakers in the protocol. Each council controls specific parts of the system, for example, the technical council manages the protocol updates multisig, while the treasury council funds incentives and manages treasury.
+We use a governance model composed by a DAO, community members, early contributors and several councils elected by stakers in the protocol. Each council controls specific parts of the system, for example, the technical council manages the protocol updates multisig, while the Treasury council funds incentives and manages Treasury.
 
 ## Governance structure
 WIP
