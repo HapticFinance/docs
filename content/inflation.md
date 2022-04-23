@@ -6,7 +6,7 @@ metaDescription: ""
 
 ## Network bootstrapping
 
-While many projects do not rely on a inflationary monetary policy, they often quickly learn that simulations were not accurate enough (or plainly wrong) or their business model does not scale, and they find themselves in need for extra revenues. Seignorage allows a startup to bank on future earnings of the network, based on the actual economic value of its token. This has the effect to increase user engagement and reward parties with an asset directly tied to the network value, ultimately aligning the interests of participants with the long term prospects for the projects. Haptic uses an inflationary model, which will gradually increase the token supply from 100M to 250M HAP over the course of 5 years, with weekly cycles of inflation and a progressive decay. 
+While many projects do not rely on a inflationary monetary policy, they often quickly learn that simulations were not accurate enough (or plainly wrong) or their business model does not scale, and they find themselves in need for extra revenues. Seignorage allows a startup to bank on future earnings of the network, based on the actual economic value of its token. This has the effect to increase user engagement and reward parties with an asset directly tied to the network value, ultimately aligning the interests of participants with the long term prospects for the project. Haptic uses an inflationary model, which will gradually increase the token supply from 100M to 250M HAP over the course of 5 years, with weekly cycles of inflation and a progressive decay. 
 
 
 | Period      | Increase | Total supply     |  Increase % |
