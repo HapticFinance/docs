@@ -1,14 +1,14 @@
 ---
 title: "Tokenomics"
-metaTitle: ""
-metaDescription: ""
+metaTitle: "Haptic protocol Tokenomics"
+metaDescription: "This page describes the Haptic protocol tokenomics"
 ---
 
 # Haptic tokenomics
  
 The Haptic network token (HAP) is staked in the system to back system debt and used to reward and coordinate behavior within the  protocol.
 
-> [Read the HIP-2: Haptic Tokenomics](https://hips.haptic.finance)
+> [Read the HIP-2: Haptic Tokenomics](https://hips.haptic.finance/hips/hip-2/)
 
 
 # Supply

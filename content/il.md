@@ -1,7 +1,7 @@
 ---
 title: "Impermanent Loss"
-metaTitle: "Syntax Highlighting is the meta title tag for this page"
-metaDescription: "This is the meta description for this page"
+metaTitle: "Haptic protocol - Impermanent loss information"
+metaDescription: "This page provides information about Impermanent loss"
 ---
 
 ## What is impermanent loss?

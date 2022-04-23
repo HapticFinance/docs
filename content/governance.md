@@ -1,7 +1,7 @@
 ---
 title: "Governance"
-metaTitle: "Syntax Highlighting is the meta title tag for this page"
-metaDescription: "This is the meta description for this page"
+metaTitle: "Haptic protocol Decentralized Governance"
+metaDescription: "This page describes the Haptic protocol Governance mechanism"
 ---
 
 ## How is Haptic governed?

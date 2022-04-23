@@ -1,7 +1,7 @@
 ---
 title: "Stakers"
-metaTitle: "Syntax Highlighting is the meta title tag for this page"
-metaDescription: "This is the meta description for this page"
+metaTitle: "Haptic protocol - Stakers"
+metaDescription: "This page describes the role of Stakers in the Haptic protocol"
 ---
 
 ## HAP backed debt

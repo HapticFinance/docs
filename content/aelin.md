@@ -1,7 +1,7 @@
 ---
 title: "Aelin seed round"
-metaTitle: ""
-metaDescription: ""
+metaTitle: "Haptic Aelin seed round"
+metaDescription: "Information about the upcoming Haptic seed round on Aelin.xyz"
 ---
 
 # Haptic Aelin seed round 
