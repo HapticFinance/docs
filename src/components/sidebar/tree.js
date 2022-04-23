@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import config from '../../../config';
 import TreeNode from './treeNode';
+import Link from '../link';
 
 const calculateTreeData = edges => {
   const originalData = config.sidebar.ignoreIndex
@@ -130,12 +131,49 @@ const Tree = ({ edges }) => {
   });
 
   treeData.items.forEach(item => {
+    const docsMap = {
+      "Introduction": ["basics", "glossary"],
+      "Resources": [ "borrowers", "stakers", "il", "governance", "inflation"],
+      "Launch": ["aelin", "tokenomics"],
+  
+    }
+    let category
+    Object.keys(docsMap).forEach(key => {
+      if (docsMap[key].includes(item.label)) {
+        console.log(`Category is ${key}`)
+        category = key
+      }
+      item.category = category
+    })
+  })
+
+  function groupBy(list, keyGetter) {
+    const map = new Map();
+    list.forEach((item) => {
+         const key = keyGetter(item);
+         const collection = map.get(key);
+         if (!collection) {
+             map.set(key, [item]);
+         } else {
+             collection.push(item);
+         }
+    });
+      return map;
+  }
+
+  const grouped = groupBy(treeData.items, item => item.category);
+  console.log(grouped.get("Introduction"))
+
+  treeData.items.forEach(item => {
     if (config.sidebar.collapsedNav && config.sidebar.collapsedNav.includes(item.url)) {
       defaultCollapsed[item.url] = true;
     } else {
       defaultCollapsed[item.url] = false;
     }
   });
+
+  const categories = ["Introduction", "Resources", "Launch"];
+
   const [collapsed, setCollapsed] = useState(defaultCollapsed);
 
   const toggle = url => {
@@ -144,14 +182,67 @@ const Tree = ({ edges }) => {
       [url]: !collapsed[url],
     });
   };
+  console.log(treeData)
+
+  const isCollapsed = false;// collapsed[url];
+
+  const collapse = () => {
+    setCollapsed(url);
+  };
+
+  const hasChildren = false; //items.length !== 0;
+
+  let location;
+
+  if (typeof document != 'undefined') {
+    location = document.location;
+  }
+  const active = false;
+  //  location && (location.pathname === url || location.pathname === config.gatsby.pathPrefix + url);
+
+  let className = ''
+  const calculatedClassName = `${className} item ${active ? 'active' : ''}`;
+  let title = 'abc'
 
   return (
-    <TreeNode
-      className={`${config.sidebar.frontLine ? 'showFrontLine' : 'hideFrontLine'} firstLevel`}
-      setCollapsed={toggle}
-      collapsed={collapsed}
-      {...treeData}
-    />
+    <>
+      <ul className="sidebar__list">
+
+      {categories.map(category => {
+        return (
+        <>
+        <br />
+
+        <span key={category} style={{fontFamily:"Roboto", fontSize:"13px", fontWeight:"bold", marginLeft:"10px"}}>
+          {category}
+        </span>
+        <br /><br />
+
+        {grouped.get(category).map(item => {
+          console.log(item)
+          return (
+            <li className={calculatedClassName}>
+            {item.title && (
+              <Link to={item.url}>
+                {item.title}
+                {!config.sidebar.frontLine && item.title && hasChildren ? (
+                  <button onClick={collapse} aria-label="collapse" className="collapser">
+                    {!isCollapsed ? <OpenedSvg /> : <ClosedSvg />}
+                  </button>
+                ) : null}
+              </Link>
+            )}
+          </li>      
+
+          )
+        })}
+        </>
+        )
+      })}
+          
+    </ul>
+    </>
+ 
   );
 };
 
