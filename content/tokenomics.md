@@ -19,6 +19,8 @@ HAP will have an initial supply of 100,000,000 (100M). Weekly emissions will sta
 
 | Entity      | Supply % |
 | :---        |    :----:   |
+| Early stakers | 10%         |
+| Early borrowers | 5%        |
 | Synthetix Stakers      |10%      |
 | Haptic Treasury   | 30%       |
 | Core Contributors  |15%        |
