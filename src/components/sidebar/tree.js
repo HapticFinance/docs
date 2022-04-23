@@ -96,13 +96,13 @@ const calculateTreeData = edges => {
       }
     }
     // sort items alphabetically.
-    prevItems.map(item => {
+    /*prevItems.map(item => {
       item.items = item.items.sort(function(a, b) {
         if (a.label < b.label) return -1;
         if (a.label > b.label) return 1;
         return 0;
       });
-    });
+    });*/
     const slicedLength =
       config.gatsby && config.gatsby.trailingSlash ? parts.length - 2 : parts.length - 1;
 
@@ -123,15 +123,15 @@ const Tree = ({ edges }) => {
   const defaultCollapsed = {};
 
   // sort items alphabetically.
-  treeData.items = treeData.items.sort(function(a, b) {
+  /*treeData.items = treeData.items.sort(function(a, b) {
     if (a.label < b.label) return -1;
     if (a.label > b.label) return 1;
     return 0;
-  });
+  });*/
 
   treeData.items.forEach(item => {
     const docsMap = {
-      "Introduction": ["basics", "glossary"],
+      "Introduction": [ "glossary", "basics"],
       "Resources": [ "borrowers", "stakers", "il", "governance", "inflation"],
       "Launch": ["aelin", "tokenomics"],
   
@@ -161,7 +161,6 @@ const Tree = ({ edges }) => {
   }
 
   const grouped = groupBy(treeData.items, item => item.category);
-  console.log(grouped.get("Introduction"))
 
   treeData.items.forEach(item => {
     if (config.sidebar.collapsedNav && config.sidebar.collapsedNav.includes(item.url)) {
@@ -212,7 +211,7 @@ const Tree = ({ edges }) => {
         <>
         <br />
 
-        <span key={category} style={{fontFamily:"Roboto", fontSize:"13px", fontWeight:"bold", marginLeft:"10px"}}>
+        <span key={category} style={{fontFamily:"Roboto", fontSize:"14px", fontWeight:"bold", marginLeft:"10px"}}>
           {category}
         </span>
         <br /><br />
