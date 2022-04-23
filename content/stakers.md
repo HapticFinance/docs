@@ -38,7 +38,7 @@ When a staker wishes to exit the system or reduce their debt to unlock staked HA
 
 
 ## Debt shares
-[Glossary definition](/glossary/#debtshares)
+[Glossary definition](/glossary/#hapticdebtshares(hds))
 
 Debt in the system changes according to borrowers and stakers' actions and the effect of impermanent loss across the liquidity pools the protocol is engaged with. Debt shares keep track of the percentage of debt owned by a staker, represented as an ERC20 compatible token for maximum composability.
 
