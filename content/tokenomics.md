@@ -17,6 +17,8 @@ HAP will have an initial supply of 100,000,000 (100M). Weekly emissions will sta
 
 # Token distribution
 
+![Distributor](https://raw.githubusercontent.com/HapticFinance/assets/main/Distribution.png)
+
 | Entity      | Supply % |
 | :---        |    :----:   |
 | Haptic Treasury   | 30%       |
