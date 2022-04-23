@@ -159,7 +159,8 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
 
       <input 
         style={results.length >= 3 ? 
-        {marginTop:"30px"}:{marginTop:"20px"} } 
+        {marginTop:"120px", height:"35px", fontSize:"16px", width:"25%"} :
+        {marginTop:"30px", height:"35px",fontSize:"16px", width:"25%"} } 
         type="text" 
         placeholder="Search" 
         onFocus={() => setFocus(true)} 
@@ -171,7 +172,7 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
         results.map(result => {
           //console.log(links[result.ref])
           return (
-            <ul style={{background:"beige", width:"25%"}}>
+            <ul style={{background:"beige", width:"25%", padding:"10px"}}>
               <a href={links[result.ref]}>
                 <li style={{minHeight:"25px"}} >{result.ref}</li>
               </a>
