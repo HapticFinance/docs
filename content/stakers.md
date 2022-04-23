@@ -6,7 +6,7 @@ metaDescription: "This page describes the role of Stakers in the Haptic protocol
 
 ## HAP backed debt
 
-Debt on the Haptic protocol is backed by HAP tokens. Stakers lock HAP as collateral using our user interface and mint a desired amount of tokenized debt asset (TDA). TDA is currently backed by a 400% c-ratio. This may change in the future, as determined by the community via decentralized governance mechanisms. The c-ratio guarantees that the value of the collateral deposited in enough to absorb most price shocks, without incurring in liquidation risk. Stakers' debt fluctuates as a result of impermanent loss, as well as other stakers and borrowers' actions. When a staker wants to exit their position and withdraw HAP collateral, they must pay back their original debt plus any surplus by burning TDA.
+Debt on the Haptic protocol is backed by HAP tokens. Stakers lock HAP as collateral using our user interface and mint a desired amount of tokenized debt asset (TDA). TDA is currently backed by a 400% c-ratio. This may change in the future, as determined by the community via decentralized governance mechanisms. The c-ratio guarantees that the value of the collateral deposited in enough to absorb most price shocks, without incurring in liquidation risk. Stakers' debt fluctuates as a result of impermanent loss, as well as other stakers' and borrowers' actions. When a staker wants to exit their position and withdraw HAP collateral, they must pay back their original debt plus any surplus by burning TDA.
 
 ## Why staking
 
