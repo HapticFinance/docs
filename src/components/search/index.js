@@ -150,15 +150,14 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
   }
 
   const hasResults = results.length > 0;
-  const hasMany = results.length >= 3;
+  const hasMany = results.length > 1;
   
   return (
     <>
-
       <input 
         style={hasMany ? 
-        {marginTop:"120px", height:"35px", fontSize:"16px", width:"25%"} :
-        {marginTop:"30px", height:"35px",fontSize:"16px", width:"25%"} } 
+        {marginTop:"180px", height:"35px", fontSize:"16px", width:"25%"} :
+        {marginTop:"20px", height:"35px",fontSize:"16px", width:"25%"} } 
         type="text" 
         placeholder="Search" 
         onFocus={() => setFocus(true)} 
