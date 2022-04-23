@@ -115,7 +115,7 @@ const SidebarLayout = ({ location }) => (
               dangerouslySetInnerHTML={{ __html: config.sidebar.title }}
             />
           ) : null}
-          <ul className={'sideBarUL'}>
+          <ul className={'sideBarUL'} style={{marginLeft:"20px"}}>
             <Tree edges={allMdx.edges} />
             {config.sidebar.links && config.sidebar.links.length > 0 && <Divider />}
             {config.sidebar.links.map((link, key) => {

@@ -139,8 +139,7 @@ const Tree = ({ edges }) => {
     let category
     Object.keys(docsMap).forEach(key => {
       if (docsMap[key].includes(item.label)) {
-        console.log(`Category is ${key}`)
-        category = key
+         category = key
       }
       item.category = category
     })
@@ -180,8 +179,7 @@ const Tree = ({ edges }) => {
       [url]: !collapsed[url],
     });
   };
-  console.log(treeData)
-
+ 
   const isCollapsed = false;// collapsed[url];
 
   const collapse = () => {
@@ -217,8 +215,7 @@ const Tree = ({ edges }) => {
         <br /><br />
 
         {grouped.get(category).map(item => {
-          console.log(item)
-          return (
+           return (
             <li className={calculatedClassName}>
             {item.title && (
               <Link to={item.url}>
