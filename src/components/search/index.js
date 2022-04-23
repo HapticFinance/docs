@@ -120,11 +120,9 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
   const ref = createRef();
 
   const [query, setQuery] = useState(``);
-
   const [focus, setFocus] = useState(false);
 
   useClickOutside(ref, () => setFocus(false));
-  const displayResult = query.length > 0 && focus ? 'showResults' : 'hideResults';
 
   const idx = lunr(function () {
     this.ref('name')
@@ -141,24 +139,24 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
   }
   let results = []
 
-  //console.log(`Query is ${query}`)
   if (query != '') {
     results = idx.search(query)
   }
-
-  //console.log(results)
 
   const links = {
     "Borrowers": "/borrowers",
     "Stakers": "/stakers",
     "Basics": "/basics",
   }
+
   const hasResults = results.length > 0;
+  const hasMany = results.length >= 3;
+  
   return (
     <>
 
       <input 
-        style={results.length >= 3 ? 
+        style={hasMany ? 
         {marginTop:"120px", height:"35px", fontSize:"16px", width:"25%"} :
         {marginTop:"30px", height:"35px",fontSize:"16px", width:"25%"} } 
         type="text" 
@@ -170,7 +168,6 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
       <>
         {hasResults > 0 ? 
         results.map(result => {
-          //console.log(links[result.ref])
           return (
             <ul style={{background:"beige", width:"25%", padding:"10px"}}>
               <a href={links[result.ref]}>
