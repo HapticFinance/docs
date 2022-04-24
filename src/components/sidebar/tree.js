@@ -269,26 +269,36 @@ const Tree = ({ edges }) => {
               <>
               {hasChildren(item) ? (
                 <>
-                <Link to={item.url} style={isAelin ? collapsable : {display:"block"}} onClick={isAelin? collapse: null}>
-                  {collapsed ? <><ClosedSvg />&nbsp;</> : <><OpenedSvg />&nbsp;</>} {item.title}
+                <Link to={item.url} style={{}/*isAelin ? collapsable : {display:"block"}*/} onClick={isAelin? collapse: null}>
+                  {collapsed ? 
+                  <>
+                  <ClosedSvg />&nbsp;
+                  </> : 
+                  <>
+                  <OpenedSvg />&nbsp;
+                  </>
+                  } {item.title}
                 </Link>
-                  <div style={isAelin ? content : {display:"block"}}>
+                  <p style={isAelin ? content : {display:"block"}}>
                     {subCategories[otherName].map((item, index) => {
                       let url = item.split(":")[1];
                       let desc = item.split(":")[0];
                       return (
-                      <li className={"item"} style={{ margin:"5px 0 5px 5px"}}>
-                        <Link to={url} className={"item"} style={{ margin:"5px 0 5px 5px"}}>
-                          &nbsp; {desc}
-                        </Link>
-                      </li>)
+                        <li className={"item"} style={{ margin:"5px 0 5px 10px"}}>
+                          <Link to={url}  style={{ margin:"5px 0 5px 10px"}}>
+                            &nbsp; {desc}
+                          </Link>
+                        </li>
+                      )
                     })}
-                  </div>
+                  </p>
                   </>
                 ) : 
-                <Link to={item.url} >
-                  {item.title}
-                </Link>
+                <li className={"item"} >
+                  <Link to={item.url} >
+                    {item.title}
+                  </Link>
+                </li>
                 }
               </>
             )}
