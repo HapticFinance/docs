@@ -205,7 +205,10 @@ const Tree = ({ edges }) => {
   };
 
   let subCategories = {
-    "aelin": [ "How to participate:/aelin_howto"],
+    "aelin": [ 
+      "How to participate:/aelin_howto", 
+      "Join the pool:/aelin_join"
+    ],
   }
 
   const otherNames = {
