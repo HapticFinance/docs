@@ -22,7 +22,7 @@ The Haptic Treasury will raise funds via [Aelin](https://aelin.xyz) to fuel prot
 * Fully diluted valuation: **$20M**
 * Vesting: ?
 
-> There will be a **48-hours** allocation window for pool contributors to accept the deal terms once the buy-in period is closed. 
+> ✔️ There will be a **48-hours** allocation window for pool contributors to accept the deal terms once the buy-in period is closed ⏳. 
 
 Pool contributors will receive Pre-Haptic (pHAP), which will be directly reedemable for HAP on a 1:1 basis once the token goes live. Please see our roadmap on the [official website](https://haptic.finance). pHAP will not be stakeable and it must be converted to be used for voting purposes.
 
