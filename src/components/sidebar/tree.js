@@ -214,7 +214,7 @@ const Tree = ({ edges }) => {
   const otherNames = {
     "Aelin seed round": "aelin",
   }
-  const hasChildren = (item) => typeof subCategories[otherNames[item.title]] != "undefined"; //items.length !== 0;
+  const hasChildren = (item) => typeof subCategories[otherNames[item.title]] != "undefined";
 
   let location;
 
@@ -244,6 +244,13 @@ const Tree = ({ edges }) => {
     overflow: "hidden",
   }
 
+  const innerLink = {
+    margin:"5px 0 5px 10px"
+  }
+
+  const display = {
+    display: "block",
+  }
 
   return (
     <>
@@ -281,15 +288,15 @@ const Tree = ({ edges }) => {
                   </>
                   } {item.title}
                 </Link>
-                  <p style={isAelin ? content : {display:"block"}}>
+                  <p style={isAelin ? content : display}>
                     {subCategories[otherName].map((item, index) => {
 
                       let url = item.split(":")[1];
                       let desc = item.split(":")[0];
 
                       return (
-                        <li className={"item"} style={{ margin:"5px 0 5px 10px"}}>
-                          <Link to={url}  style={{ margin:"5px 0 5px 10px"}}>
+                        <li className={"item"} style={innerLink}>
+                          <Link to={url}  style={innerLink}>
                             &nbsp; {desc}
                           </Link>
                         </li>
