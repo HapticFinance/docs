@@ -18,6 +18,7 @@ import Input from './input';
 import * as hitComps from './hitComps';
 import lunr from 'lunr';
 import {documents} from "./documents.js"
+import { isMobile } from 'react-device-detect'
 
  const SearchIcon = styled(Search)`
   width: 1em;
@@ -147,15 +148,18 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
     "Impermanent loss": "/il",
   }
 
-  const hasResults = results.length > 0;
-  const hasMany = results.length > 1;
+  const hasResults = results.length > 0; 
+
+  let style = {marginTop:"-10px", width:"70%", minHeight:"35px", padding:"5px", fontSize:"14px"}
   
+  if (isMobile) {
+    style = {...style, width:"100%", marginLeft:"15px", marginTop:"10px"}
+  }
+
   return (
-    <>
+    <div style={{position:"absolute", minWidth:"50%"}}>
       <input 
-        style={hasMany ? 
-        {marginTop:"200px", height:"35px", fontSize:"16px", width:"25%"} :
-        {marginTop:"20px", height:"35px",fontSize:"16px", width:"25%"} } 
+        style={style} 
         type="text" 
         placeholder="Search" 
         onFocus={() => setFocus(true)} 
@@ -166,9 +170,14 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
         {hasResults > 0 ? 
         results.map(result => {
           return (
-            <ul style={{background:"beige", width:"25%", padding:"10px"}}>
+            <ul style={isMobile ? 
+              {background:"beige", width:"100%", marginLeft:"15px", padding:"10px", position:"relative", zIndex:1}
+            :
+            {background:"beige", width:"70%", padding:"10px"}}>
               <a href={links[result.ref]}>
-                <li style={{minHeight:"25px"}} >{result.ref}</li>
+                <li style={isMobile ?
+                  {minHeight:"25px", overlay:"top"} 
+                : {minHeight:"25px"}} >{result.ref}</li>
               </a>
             </ul>
           )
@@ -176,6 +185,6 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
         <></>
         }
         </>
-    </>
+    </div>
   );
 }
