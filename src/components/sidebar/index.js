@@ -116,7 +116,9 @@ const SidebarLayout = ({ location }) => (
             />
           ) : null}
           <ul className={'sideBarUL'} style={{marginLeft:"20px"}}>
+            
             <Tree edges={allMdx.edges} />
+            
             {config.sidebar.links && config.sidebar.links.length > 0 && <Divider />}
             {config.sidebar.links.map((link, key) => {
               
@@ -129,6 +131,10 @@ const SidebarLayout = ({ location }) => (
                 );
               }
             })}
+            <ListItem key={"Github"} to={"https://github.com/hapticfinance"}>
+              {"Github"}
+              <ExternalLink size={14} />
+            </ListItem>
           </ul>
         </Sidebar>
       );

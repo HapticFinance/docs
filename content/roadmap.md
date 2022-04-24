@@ -19,7 +19,7 @@ The purpose of the milestones layed out is position Haptic as a DeFi hub and ent
 |--| -----------------|
 |     <table>    <tr>    <td><b>Milestone</b></td><td><b>Status</b> </td>    </tr>    <tr>    <td> Product development </td><td>⏳</td>    </tr>    <tr>    <td> Security audit  </td><td>☐</td>    </tr>    <tr>    <td> Mainnet (Ethereum & OVM)  </td><td>☐</td>    </tr>           </table> | <table>    <tr>    <td><b>Milestone</b></td><td><b>Status</b> </td>    </tr> <tr>    <td> Strategic partnerships  </td><td>☐</td>    </tr>     <tr>    <td> DeFi integrations </td><td>☐</td>    </tr>    <tr>    <td> Interoperability  </td><td>☐</td>    </tr>    <tr>    <td> Automatic hedging  </td><td>☐</td>    </tr>         </table> |
 
-## Future directions
+# Future directions
 
 |  Q1 2023 |
 |--| 
