@@ -31,18 +31,15 @@ const config = {
     search: {
       enabled: true,
       indexName: 'index',
-      algoliaAppId: process.env.GATSBY_ALGOLIA_APP_ID,
-      algoliaSearchKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
-      algoliaAdminKey: process.env.ALGOLIA_ADMIN_KEY,
     },
     forcedNavOrder:{
-      enabled: true,
+      enabled: false,
     }
   },
   sidebar: {
     forcedNavOrder: [
-      '/basics', // add trailing slash if enabled above
-      '/borrowers',
+      //'/basics', // add trailing slash if enabled above
+      //'/borrowers',
     ],
     collapsedNav: [
       '/basics', // add trailing slash if enabled above
