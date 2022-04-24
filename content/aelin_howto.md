@@ -10,7 +10,7 @@ The Haptic Community raise powered by Aelin will be held on Optimism Layer 2. In
 
 # Aelin Key terms and how they apply
 
-Here are some terms you will come across while participating in the Kwenta Community Aelin raise and how they apply to this specific raise.
+Here are some terms you will come across while participating in the Haptic Aelin raise.
 
 
 | Keywords      | Description |  For Haptic raise     |
