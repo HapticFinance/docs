@@ -129,20 +129,33 @@ const Tree = ({ edges }) => {
     return 0;
   });*/
 
+  const catIcons = {
+    "Introduction": "📌",
+    "Resources": "📚",
+    "Launch": "🛸",
+  }
+
   treeData.items.forEach(item => {
+
     const docsMap = {
       "Introduction": [ "glossary", "basics"],
       "Resources": [ "borrowers", "stakers", "il", "governance", "inflation"],
       "Launch": ["aelin", "tokenomics"],
-  
     }
-    let category
+
+    let category, icon
+    
     Object.keys(docsMap).forEach(key => {
       if (docsMap[key].includes(item.label)) {
          category = key
+         icon = catIcons[key]
       }
+
       item.category = category
+      item.icon = icon
     })
+ 
+
   })
 
   function groupBy(list, keyGetter) {
@@ -210,7 +223,7 @@ const Tree = ({ edges }) => {
         <br />
 
         <span key={category} style={{fontFamily:"Roboto", fontSize:"14px", fontWeight:"bold", marginLeft:"10px"}}>
-          {category}
+          {catIcons[category]} {category}
         </span>
         <br /><br />
 
