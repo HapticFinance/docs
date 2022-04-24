@@ -195,8 +195,6 @@ const Tree = ({ edges }) => {
     });
   };
  
-  const isCollapsed = true;// collapsed[url];
-
   function collapse() {
     if (collapsed) {
       setCollapsed(false);
@@ -259,28 +257,30 @@ const Tree = ({ edges }) => {
         <br /><br />
 
         {grouped.get(category).map(item => {
+
           let otherName =otherNames[item.title]
+          
           const isAelin = otherName == "aelin";
           content.display = collapsed ? "none" : "block";
-          console.log(`Content display ${content.display} isCollapsed ${collapsed}`);
-           return (
+
+          return (
             <li className={calculatedClassName}>
             {item.title && (
               <>
               {hasChildren(item) ? (
                 <>
-                <Link to={item.url} style={isAelin ? collapsable : {}} onClick={collapse}>
+                <Link to={item.url} style={isAelin ? collapsable : {display:"block"}} onClick={isAelin? collapse: null}>
                   {collapsed ? <><ClosedSvg />&nbsp;</> : <><OpenedSvg />&nbsp;</>} {item.title}
                 </Link>
-                  <div style={isAelin ? content : {}}>
+                  <div style={isAelin ? content : {display:"block"}}>
                     {subCategories[otherName].map((item, index) => {
                       let url = item.split(":")[1];
                       let desc = item.split(":")[0];
                       return (
-                      <li class={"item"} style={{ margin:"5px 0 5px 5px"}}>
-                      <Link to={url} >
-                        &nbsp; {desc}
-                      </Link>
+                      <li className={"item"} style={{ margin:"5px 0 5px 5px"}}>
+                        <Link to={url} className={"item"} style={{ margin:"5px 0 5px 5px"}}>
+                          &nbsp; {desc}
+                        </Link>
                       </li>)
                     })}
                   </div>
