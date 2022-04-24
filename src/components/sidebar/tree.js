@@ -186,7 +186,7 @@ const Tree = ({ edges }) => {
 
   const categories = ["Introduction", "Resources", "Launch"];
 
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
 
   const toggle = url => {
     setCollapsed({
@@ -250,12 +250,11 @@ const Tree = ({ edges }) => {
         return (
         <>
         <br />
-
         <span key={category} style={labelStyle}>
           {catIcons[category]} {category}
         </span>
-        <br /><br />
-
+        <br />
+        <br />
         {grouped.get(category).map(item => {
 
           let otherName =otherNames[item.title]
@@ -269,7 +268,7 @@ const Tree = ({ edges }) => {
               <>
               {hasChildren(item) ? (
                 <>
-                <Link to={item.url} style={{}/*isAelin ? collapsable : {display:"block"}*/} onClick={isAelin? collapse: null}>
+                <Link to={item.url} onClick={isAelin? collapse: null}>
                   {collapsed ? 
                   <>
                   <ClosedSvg />&nbsp;
@@ -281,8 +280,10 @@ const Tree = ({ edges }) => {
                 </Link>
                   <p style={isAelin ? content : {display:"block"}}>
                     {subCategories[otherName].map((item, index) => {
+
                       let url = item.split(":")[1];
                       let desc = item.split(":")[0];
+
                       return (
                         <li className={"item"} style={{ margin:"5px 0 5px 10px"}}>
                           <Link to={url}  style={{ margin:"5px 0 5px 10px"}}>
@@ -290,6 +291,7 @@ const Tree = ({ edges }) => {
                           </Link>
                         </li>
                       )
+
                     })}
                   </p>
                   </>
