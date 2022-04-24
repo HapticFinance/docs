@@ -21,7 +21,7 @@ const config = {
 		    </a>
 		  </li>
 			<li>
-		    <a href="https://discordapp.com/invite/haptic" target="_blank" rel="noopener">
+		    <a href="https://discord.gg/ahJVRvjyzk" target="_blank" rel="noopener">
 		      <div class="discordBtn">
 		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
 		      </div>

@@ -146,7 +146,12 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                     </a>
                   </li>
                 ) : null}
-
+                <img
+                    className="max-w-full"
+                    src="https://img.shields.io/discord/951945913046294528.svg?color=768AD4&amp;label=discord"
+                    alt="Discord"
+                    data-canonical-src="https://img.shields.io/discord/951945913046294528.svg?color=768AD4&amp;label=discord"
+                  />
                 {tweetText !== '' ? (
                   <li>
                     <a
