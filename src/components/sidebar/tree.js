@@ -186,7 +186,7 @@ const Tree = ({ edges }) => {
 
   const categories = ["Introduction", "Resources", "Launch"];
 
-  const [collapsed, setCollapsed] = useState(defaultCollapsed);
+  const [collapsed, setCollapsed] = useState(false);
 
   const toggle = url => {
     setCollapsed({
@@ -197,8 +197,13 @@ const Tree = ({ edges }) => {
  
   const isCollapsed = true;// collapsed[url];
 
-  const collapse = () => {
-    setCollapsed(url);
+  function collapse() {
+    if (collapsed) {
+      setCollapsed(false);
+    } else {
+      setCollapsed(true);
+    }
+    console.log(`Collapsed ${collapsed}`);
   };
 
   let subCategories = {
@@ -222,6 +227,23 @@ const Tree = ({ edges }) => {
   const calculatedClassName = `${className} item ${active ? 'active' : ''}`;
   
   const labelStyle = {fontFamily:"Roboto", fontSize:"14px", fontWeight:"bold", marginLeft:"10px"}
+
+  const collapsable = {
+    color: "#444",
+    cursor: "pointer",
+    width: "100%",
+    border: "none",
+    textAlign: "left",
+    outline: "none",
+    fontSize: "15px"
+  }
+
+  const content = {
+    display: "none",
+    overflow: "hidden",
+  }
+
+
   return (
     <>
       <ul className="sidebar__list">
@@ -237,27 +259,37 @@ const Tree = ({ edges }) => {
         <br /><br />
 
         {grouped.get(category).map(item => {
+          let otherName =otherNames[item.title]
+          const isAelin = otherName == "aelin";
+          content.display = collapsed ? "none" : "block";
+          console.log(`Content display ${content.display} isCollapsed ${collapsed}`);
            return (
             <li className={calculatedClassName}>
             {item.title && (
               <>
-                <Link to={item.url}>
-                  {item.title}
+              {hasChildren(item) ? (
+                <>
+                <Link to={item.url} style={isAelin ? collapsable : {}} onClick={collapse}>
+                  {collapsed ? <><ClosedSvg />&nbsp;</> : <><OpenedSvg />&nbsp;</>} {item.title}
                 </Link>
-                {hasChildren(item) ? (
-                  <>
-                    {subCategories[otherNames[item.title]].map((item, index) => {
+                  <div style={isAelin ? content : {}}>
+                    {subCategories[otherName].map((item, index) => {
                       let url = item.split(":")[1];
                       let desc = item.split(":")[0];
                       return (
                       <li class={"item"} style={{ margin:"5px 0 5px 5px"}}>
-                      <Link to={url}>
-                        <ClosedSvg />&nbsp; {desc}
+                      <Link to={url} >
+                        &nbsp; {desc}
                       </Link>
                       </li>)
                     })}
+                  </div>
                   </>
-                ) : null}
+                ) : 
+                <Link to={item.url} >
+                  {item.title}
+                </Link>
+                }
               </>
             )}
           </li>      
