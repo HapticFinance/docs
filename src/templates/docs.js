@@ -63,12 +63,11 @@ export default class MDXRuntimeTest extends Component {
           return { title: node.fields.title, url: node.fields.slug };
         }
       });
+      console.log(nav)
 
     // meta tags
     const metaTitle = mdx.frontmatter.metaTitle;
-
     const metaDescription = mdx.frontmatter.metaDescription;
-
     let canonicalUrl = config.gatsby.siteUrl;
 
     canonicalUrl =
@@ -102,9 +101,9 @@ export default class MDXRuntimeTest extends Component {
         <StyledMainWrapper>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </StyledMainWrapper>
-        <div className={'addPaddTopBottom'}>
-          <NextPrevious mdx={mdx} nav={nav} />
-        </div>
+          <div className={'addPaddTopBottom'}>
+            <NextPrevious mdx={mdx} nav={nav} />
+          </div>
       </Layout>
     );
   }
