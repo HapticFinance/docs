@@ -55,8 +55,6 @@ const SidebarLayout = ({ location }) => (
             finalNavItems = innerItems;
           }
         });
-
-        console.log(finalNavItems)
       }
 
       if (finalNavItems && finalNavItems.length) {

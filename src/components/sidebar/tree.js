@@ -140,7 +140,7 @@ const Tree = ({ edges }) => {
     const docsMap = {
       "Introduction": [ "glossary", "basics"],
       "Resources": [ "borrowers", "stakers", "il", "governance", "inflation"],
-      "Launch": ["aelin", "tokenomics"],
+      "Launch": ["aelin", "roadmap", "tokenomics"],
     }
 
     let category, icon

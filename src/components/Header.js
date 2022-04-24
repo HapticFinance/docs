@@ -21,7 +21,7 @@ if (isSearchEnabled && config.header.search.indexName) {
     hitComp: `PageHit`,
   });
 }
-console.log(searchIndices)
+
 import Sidebar from './sidebar';
 
 const LoadableComponent = Loadable({
