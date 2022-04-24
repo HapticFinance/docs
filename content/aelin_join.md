@@ -23,3 +23,5 @@ Once you have found the Haptic Pool, review all the details related to the Pool 
 You can connect your web3 wallet by finding the "Connect" button at the top right corner of the Aelin screen. You'll be prompted to pick your wallet and approve a prompt allowing access to communicate with your wallet.
 
 # Step 2 - Pledge sUSD
+
+WIP
