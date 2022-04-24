@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import config from '../../../config';
 import Link from '../link';
+import OpenedSvg from '../images/opened';
+import ClosedSvg from '../images/closed';
 
 const calculateTreeData = edges => {
   const originalData = config.sidebar.ignoreIndex
@@ -193,13 +195,20 @@ const Tree = ({ edges }) => {
     });
   };
  
-  const isCollapsed = false;// collapsed[url];
+  const isCollapsed = true;// collapsed[url];
 
   const collapse = () => {
     setCollapsed(url);
   };
 
-  const hasChildren = false; //items.length !== 0;
+  let subCategories = {
+    "aelin": [ "How to participate:/aelin_howto"],
+  }
+
+  const otherNames = {
+    "Aelin seed round": "aelin",
+  }
+  const hasChildren = (item) => typeof subCategories[otherNames[item.title]] != "undefined"; //items.length !== 0;
 
   let location;
 
@@ -211,8 +220,8 @@ const Tree = ({ edges }) => {
 
   let className = ''
   const calculatedClassName = `${className} item ${active ? 'active' : ''}`;
-  let title = 'abc'
-
+  
+  const labelStyle = {fontFamily:"Roboto", fontSize:"14px", fontWeight:"bold", marginLeft:"10px"}
   return (
     <>
       <ul className="sidebar__list">
@@ -222,7 +231,7 @@ const Tree = ({ edges }) => {
         <>
         <br />
 
-        <span key={category} style={{fontFamily:"Roboto", fontSize:"14px", fontWeight:"bold", marginLeft:"10px"}}>
+        <span key={category} style={labelStyle}>
           {catIcons[category]} {category}
         </span>
         <br /><br />
@@ -231,14 +240,25 @@ const Tree = ({ edges }) => {
            return (
             <li className={calculatedClassName}>
             {item.title && (
-              <Link to={item.url}>
-                {item.title}
-                {!config.sidebar.frontLine && item.title && hasChildren ? (
-                  <button onClick={collapse} aria-label="collapse" className="collapser">
-                    {!isCollapsed ? <OpenedSvg /> : <ClosedSvg />}
-                  </button>
+              <>
+                <Link to={item.url}>
+                  {item.title}
+                </Link>
+                {hasChildren(item) ? (
+                  <>
+                    {subCategories[otherNames[item.title]].map((item, index) => {
+                      let url = item.split(":")[1];
+                      let desc = item.split(":")[0];
+                      return (
+                      <li class={"item"} style={{ margin:"5px 0 5px 5px"}}>
+                      <Link to={url}>
+                        <ClosedSvg />&nbsp; {desc}
+                      </Link>
+                      </li>)
+                    })}
+                  </>
                 ) : null}
-              </Link>
+              </>
             )}
           </li>      
 
