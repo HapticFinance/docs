@@ -146,6 +146,9 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
     "Stakers": "/stakers",
     "Basics": "/basics",
     "Impermanent loss": "/il",
+    "Haptic Aelin seed round":"/aelin",
+    "Roadmap": "/roadmap",
+    "Inflationary supply": "/inflation"
   }
 
   const hasResults = results.length > 0; 
