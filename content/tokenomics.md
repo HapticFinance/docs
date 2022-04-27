@@ -19,12 +19,15 @@ HAP will have an initial supply of 100,000,000 (100M). Weekly emissions will sta
 
 ![Distribution](https://raw.githubusercontent.com/HapticFinance/assets/main/Distribution.png)
 
-| Entity      | Supply % |
+| Allocated to      | Supply % |
 | :---        |    :----:   |
-| Haptic Treasury   | 25%       |
-| Community growth   | 20%        |
-| Team & Core Contributors  | 15%        |
-| Parternships & Investors   | 15%        |
-| Incentives to other protocols      |10%      |
-| Early adopters (Stakers) | 10%         |
-| Early adopters (Borrowers) | 5%        |
+| Treasury   | 25%       |
+| Community incentives   | 20%        |
+| Team & advisors  | 15%        |
+| Parternship incentives   | 15%        |
+| Early adopters | 15%         |
+| Marketing      |10%      |
+
+# Vesting schedule
+
+Team and advisors vest quarterly for 24 months with a 6 months cliff. 
