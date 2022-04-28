@@ -20,7 +20,8 @@ The Haptic Treasury will raise funds via [Aelin](https://aelin.xyz) to fuel prot
 * Round goal: **$1M** 
 * Allocation: **5% of initial supply**
 * Fully diluted valuation: **$20M**
-* Vesting: ?
+* Vesting: Quarterly for 18 months with a 12 months cliff
+
 
 > ✔️ There will be a **48-hours** allocation window for pool contributors to accept the deal terms once the buy-in period is closed ⏳. 
 
