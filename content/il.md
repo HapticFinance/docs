@@ -223,8 +223,8 @@ WIP
 
 Haptic tracks impermanent loss across borrowers' liquidity positions and displays it conveniently in real-time on our user interface. Impermanent loss influences the user outcome and the protocol offers rewards for optimal behavior under certain circumnstances.
 
-# Links
-
-[Website](https://haptic.finance) / [Medium](https://hapticfinance.medium.com/) / [Twitter](https://twitter.com/hapticfinance/) / [Discord](https://twitter.com/hapticfinance/) / [Github](https://github.com/hapticfinance/)'
-
 -->
+
+### Links
+
+[Website](https://haptic.finance) / [Medium](https://hapticfinance.medium.com/) / [Twitter](https://twitter.com/hapticfinance/) / [Discord](https://twitter.com/hapticfinance/) / [Github](https://github.com/hapticfinance/)

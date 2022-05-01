@@ -31,6 +31,6 @@ The protocol will charge a small fee (0.3%) upon the execution of certain risky 
 (\*) *may vary across protocols*
 
 
-## Links
+### Links
 
 [Website](https://haptic.finance) / [Medium](https://hapticfinance.medium.com/) / [Twitter](https://twitter.com/hapticfinance/) / [Discord](https://twitter.com/hapticfinance/) / [Github](https://github.com/hapticfinance/)

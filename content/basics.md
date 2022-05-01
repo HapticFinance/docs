@@ -24,7 +24,6 @@ The protocol uses a decentralized governance structure, deeply inspired by other
 - Treasury council, which controls the Treasury multisig.
 - Supervisor council, which oversees the DAO general operations.
 
-
-## Links
+### Links
 
 [Website](https://haptic.finance) / [Medium](https://hapticfinance.medium.com/) / [Twitter](https://twitter.com/hapticfinance/) / [Discord](https://twitter.com/hapticfinance/) / [Github](https://github.com/hapticfinance/)

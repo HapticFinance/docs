@@ -23,3 +23,7 @@ While many projects do not rely on a inflationary monetary policy, they often qu
 
 ## Escrow and vesting
 HAP obtained via inflation will be locked in Escrow for 1 year. Vesting HAP early will begin with a 80% burning fee, which will reduce to 0 after 1 year. 
+
+### Links
+
+[Website](https://haptic.finance) / [Medium](https://hapticfinance.medium.com/) / [Twitter](https://twitter.com/hapticfinance/) / [Discord](https://twitter.com/hapticfinance/) / [Github](https://github.com/hapticfinance/)
