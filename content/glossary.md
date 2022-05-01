@@ -48,7 +48,7 @@ Bonding is when a staker purchases HAP tokens from the protocol, at a discount f
 
 ## LP token
 
-A token representing a share in the liquidity of an AMM pool
+A token representing a share in the liquidity of an AMM pool.
 
 ## Protocol owned liquidity (POL)
 
