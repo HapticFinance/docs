@@ -30,7 +30,7 @@ HAP will have an initial supply of 100,000,000 (100M). Weekly emissions will sta
 
 # Vesting schedule
 
-Team and advisors vest quarterly for 24 months with a 6 months cliff. 
+Team and advisors vest quarterly for 24 months with a 12 months cliff. 
 
 ### Links
 
