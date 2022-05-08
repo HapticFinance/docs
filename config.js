@@ -7,10 +7,10 @@ const config = {
   },
   header: {
     logo: 'https://raw.githubusercontent.com/HapticFinance/assets/29e2f5a27dd86bc1b08fc933d7fae149b790827f/logo-horizontal.svg',
-    logoLink: 'https://haptic.finance/',
+    logoLink: 'https://docs.haptic.finance/',
+    githubUrl: 'https://github.com/hapticfinance/docs',
     title:
       "<a href='https://docs.haptic.finance'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Haptic Logo' /></a>",
-    githubUrl: 'https://github.com/hapticfinance/docs',
     helpUrl: '',
     tweetText: '',
     social: `<li>
@@ -44,7 +44,7 @@ const config = {
     collapsedNav: [
       '/basics', // add trailing slash if enabled above
     ],
-    links: [{ text: 'Haptic Finance', link: 'https://haptic.finance/' }],
+    links: [{ text: 'Haptic Finance', link: 'https://docs.haptic.finance/' }],
     frontline: false,
     ignoreIndex: true,
     // title:

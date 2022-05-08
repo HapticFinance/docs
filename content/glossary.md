@@ -48,7 +48,7 @@ Bonding is when a staker purchases HAP tokens from the protocol, at a discount f
 
 ## LP token
 
-A token representing a share in the liquidity of an AMM pool
+A token representing a share in the liquidity of an AMM pool.
 
 ## Protocol owned liquidity (POL)
 
@@ -57,3 +57,7 @@ Refers to the ability of the protocol to control its own liquidity on AMMs, as a
 ## Tokenized debt asset (TDA)
 
 Staking in the Haptic protocol creates debt denominated in tokenized debt asset. The value of TDA is pegged 1:1 with the US Dollar.
+
+### Links
+
+[Website](https://haptic.finance) / [Medium](https://hapticfinance.medium.com/) / [Twitter](https://twitter.com/hapticfinance/) / [Discord](https://twitter.com/hapticfinance/) / [Github](https://github.com/hapticfinance/)

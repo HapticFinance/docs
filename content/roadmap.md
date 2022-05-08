@@ -27,3 +27,7 @@ The purpose of the milestones layed out is position Haptic as a DeFi hub and ent
 
 
 <br />
+
+### Links
+
+[Website](https://haptic.finance) / [Medium](https://hapticfinance.medium.com/) / [Twitter](https://twitter.com/hapticfinance/) / [Discord](https://twitter.com/hapticfinance/) / [Github](https://github.com/hapticfinance/)

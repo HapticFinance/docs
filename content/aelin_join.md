@@ -25,3 +25,7 @@ You can connect your web3 wallet by finding the "Connect" button at the top righ
 # Step 2 - Pledge sUSD
 
 WIP
+
+### Links
+
+[Website](https://haptic.finance) / [Medium](https://hapticfinance.medium.com/) / [Twitter](https://twitter.com/hapticfinance/) / [Discord](https://twitter.com/hapticfinance/) / [Github](https://github.com/hapticfinance/)

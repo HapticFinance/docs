@@ -31,3 +31,7 @@ HAP will have an initial supply of 100,000,000 (100M). Weekly emissions will sta
 # Vesting schedule
 
 Team and advisors vest quarterly for 24 months with a 6 months cliff. 
+
+### Links
+
+[Website](https://haptic.finance) / [Medium](https://hapticfinance.medium.com/) / [Twitter](https://twitter.com/hapticfinance/) / [Discord](https://twitter.com/hapticfinance/) / [Github](https://github.com/hapticfinance/)

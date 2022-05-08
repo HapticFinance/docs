@@ -13,3 +13,7 @@ WIP
 
 ## Haptic improvement proposal
 A Haptic improvement proposal or HIP, is a formal request to change some current protocol mechanism or add a new feature. It must be redacted following a set of requirements which are listed on the [HIPs website](https://hips.haptic.finance) and on the relevant [Github repo](https://github.com/HapticFinance/HIPs).
+
+### Links
+
+[Website](https://haptic.finance) / [Medium](https://hapticfinance.medium.com/) / [Twitter](https://twitter.com/hapticfinance/) / [Discord](https://twitter.com/hapticfinance/) / [Github](https://github.com/hapticfinance/)

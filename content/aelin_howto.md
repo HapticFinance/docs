@@ -35,3 +35,7 @@ Here are some terms you will come across while participating in the Haptic Aelin
 | UNDERLYING DEAL TOKEN  | The token that a purchaser will end up with at the end of the deal if they accept the terms, after an optional vesting period      | HAP    | 
 | PRO RATA REDEMPTION | The pro rata redemption period is when a purchaser has the opportunity to max out their allocation for the deal      | 48 Hour Period after the Pool closes   | 
 | OPEN REDEMPTION   | The open redemption period is for purchasers who have maxxed their allocation in the pro rata round    | 12-hour period directly after the Pro Rata Redemption    | 
+
+### Links
+
+[Website](https://haptic.finance) / [Medium](https://hapticfinance.medium.com/) / [Twitter](https://twitter.com/hapticfinance/) / [Discord](https://twitter.com/hapticfinance/) / [Github](https://github.com/hapticfinance/)
