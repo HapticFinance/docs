@@ -10,7 +10,7 @@ The Haptic Treasury will raise funds via [Aelin](https://aelin.xyz) to fuel prot
 
 > Haptic will sell **5%** of the total token supply pre-inflation (**5M** out of 100M HAP) for **1M sUSD** and a **$20M** fully diluted valuation.
 
->>  ✔️ The pool will accept [![sUSD](https://raw.githubusercontent.com/HapticFinance/assets/8d6f4e31159fb5094ee617917735bad120123269/SynthetixsUSD_16.webp) **sUSD**](https://etherscan.io/token/0x57ab1ec28d129707052df4df418d58a2d46d5f51)  and will be open for a period of  ⏱️ **14 days** starting **May 7th, 2022** .
+>>  ✔️ The pool will accept [![sUSD](https://raw.githubusercontent.com/HapticFinance/assets/8d6f4e31159fb5094ee617917735bad120123269/SynthetixsUSD_16.webp) **sUSD**](https://etherscan.io/token/0x57ab1ec28d129707052df4df418d58a2d46d5f51)  and will be open for a period of  ⏱️ **14 days** starting **TBA** .
 
 # Pool details
 * Sponsor: [Haptic Treasury](https://etherscan.io/address/0x0000000000000000000000000000000000000000)
